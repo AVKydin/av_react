@@ -1,5 +1,6 @@
 import './App.css';
 import Simpsons from "./components/Simpsons/Simpsons";
+import Rickandmorty from "./components/Rickandmorty/Rickandmorty";
 
 let simpsons = [
   {
@@ -38,12 +39,64 @@ let simpsons = [
     photo: 'https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png'
   },
 ];
-
+let rickAndMorty =  [
+{
+  id: 15,
+  name: "Alien Rick",
+  status: "unknown",
+  species: "Alien",
+  gender: "Male",
+  image: "https://rickandmortyapi.com/api/character/avatar/15.jpeg",
+},
+{
+  id: 16,
+  name: "Amish Cyborg",
+  status: "Dead",
+  species: "Alien",
+  gender: "Male",
+  image: "https://rickandmortyapi.com/api/character/avatar/16.jpeg",
+},
+{
+  id: 17,
+  name: "Annie",
+  status: "Alive",
+  species: "Human",
+  gender: "Female",
+  image: "https://rickandmortyapi.com/api/character/avatar/17.jpeg",
+},
+{
+  id: 18,
+  name: "Antenna Morty",
+  status: "Alive",
+  species: "Human",
+  gender: "Male",
+  image: "https://rickandmortyapi.com/api/character/avatar/18.jpeg",
+},
+{
+  id: 19,
+  name: "Antenna Rick",
+  status: "unknown",
+  species: "Human",
+  gender: "Male",
+  image: "https://rickandmortyapi.com/api/character/avatar/19.jpeg",
+},
+{
+  id: 20,
+  name: "Ants in my Eyes Johnson",
+  status: "unknown",
+  species: "Human",
+  gender: "Male",
+  image: "https://rickandmortyapi.com/api/character/avatar/20.jpeg",
+}
+]
 function App() {
   return (
     <div className="App">
       {
-        <Simpsons simpsons={simpsons}/>
+        <Simpsons simpsons={simpsons} />
+      }
+      {
+        <Rickandmorty rickAndMorty={rickAndMorty} />
       }
     </div>
   );

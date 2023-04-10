@@ -1,6 +1,6 @@
 import React from 'react';
 
-const simpson = ({simpson}) => {
+const Simpson = ({simpson}) => {
     return (
         <div>
             <h3>{simpson.name} {simpson.surname}</h3>
@@ -11,4 +11,4 @@ const simpson = ({simpson}) => {
     );
 };
 
-export default simpson;
+export default Simpson;
