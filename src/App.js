@@ -1,4 +1,5 @@
 import './App.css';
+
 import Simpsons from "./components/Simpsons/Simpsons";
 import Rickandmorty from "./components/Rickandmorty/Rickandmorty";
 
