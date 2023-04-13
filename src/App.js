@@ -10,7 +10,6 @@ function App() {
     const [fullPost, setFullPost] = useState(null)
     const details = (post) => {
         setFullPost({...post})
-        console.log(post)
     }
     return (
         <div>

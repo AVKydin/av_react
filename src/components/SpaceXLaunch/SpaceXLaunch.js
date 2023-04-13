@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SpaceXLaunch = ({launch}) => {
-    console.log(launch)
+
     return (
         <div className={'launch'}>
 
