@@ -11,9 +11,7 @@ const SpaceX = () => {
             .then(launches => setLaunches(launches))
     }, [])
 
-    const launchFilter = launches.filter((launch)=>{
-        return launch.launch_year!=='2020'
-    })
+    const launchFilter = launches.filter((launch)=>launch.launch_year!=='2020')
 
     return (
         <>
