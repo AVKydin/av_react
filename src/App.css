@@ -1,0 +1,8 @@
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.full-post{
+    width: 50%;
+}

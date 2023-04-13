@@ -1,7 +1,9 @@
 import React, {useEffect, useState} from 'react';
+import Post from "../Post/Post";
 
 
-const Posts = () => {
+const Posts = ({details}) => {
+
     const [posts, setPosts] = useState([]);
 
     useEffect(()=>{
@@ -9,19 +11,20 @@ const Posts = () => {
             .then(response => response.json())
             .then(posts => {
                 setPosts(posts)
-                console.log(posts)
+
             });
     }, [])
-    console.log(posts)
+
+
 
 
     return (
         <>
-            {posts.map((post)=>{
-
-                   <p> {post.id}</p>
-
-            })}
+            {posts.map(post =>
+                <Post
+                    post={post} details={details} key={post.id}/>
+            )
+            }
         </>
     );
 };
