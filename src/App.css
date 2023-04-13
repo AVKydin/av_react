@@ -6,3 +6,15 @@
 .full-post{
     width: 50%;
 }
+
+.space{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 20px;
+    text-align: center;
+}
+
+.launch{
+    border: 1px solid black;
+}
