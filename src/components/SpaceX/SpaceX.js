@@ -12,7 +12,7 @@ const SpaceX = () => {
     }, [])
 
     const launchFilter = launches.filter((launch)=>{
-        return launch.launch_year!='2020'
+        return launch.launch_year!=='2020'
     })
 
     return (

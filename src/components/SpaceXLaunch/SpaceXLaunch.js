@@ -7,7 +7,7 @@ const SpaceXLaunch = ({launch}) => {
 
             <p > {launch.mission_name}</p>
             <p > {launch.launch_year}</p>
-           <img src={launch.links.mission_patch_small}/>
+           <img src={launch.links.mission_patch_small} alt={launch.mission_name}/>
 
 
 
