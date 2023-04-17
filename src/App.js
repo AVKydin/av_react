@@ -7,11 +7,14 @@
 //     http://owu.linkpc.net/carsAPI/v1/doc
 //         Реалізувати створення, видалення та оновлення машин
 import Cars from "./components/Cars/Cars";
+import Users from "./components/Users/Users";
 
 function App() {
   return (
     <div className="App">
-          <Cars/>
+            <Users/>
+            {/*<Comment/>*/}
+            {/*<Cars/>*/}
     </div>
   );
 }

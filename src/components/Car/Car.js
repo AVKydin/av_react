@@ -1,7 +1,10 @@
 import React from 'react';
 
-const Car = ({car}) => {
+const Car = ({car, setCarForUpdate, setCarDelete}) => {
     const {id, brand, price, year} = car;
+
+
+
 
     return (
         <div>
@@ -9,6 +12,8 @@ const Car = ({car}) => {
             <div>brand: {brand}</div>
             <div>price: {price}</div>
             <div>year: {year}</div>
+            <button onClick={()=>setCarForUpdate(car)}>update</button>
+            <button onClick={()=>setCarDelete(car)}>Delete</button>
         </div>
     );
 };

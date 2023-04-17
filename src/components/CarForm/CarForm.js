@@ -1,26 +1,57 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {useForm} from "react-hook-form";
 import {carService} from "../../services/car.service";
 
-const CarForm = ({setAllCars}) => {
+const CarForm = ({setAllCars, carForUpdate, setCarForUpdate, carDelete, setCarDelete}) => {
     const {
         register,
         handleSubmit,
         reset,
         formState: {
             errors,
-            isValid
-        }
+            isValid,
+        },
+        setValue
     } = useForm({mode: 'all'});
 
+    useEffect(()=>{
+        if (carForUpdate){
+            setValue('brand', carForUpdate.brand, {shouldValidate:true})
+            setValue('price', carForUpdate.price, {shouldValidate:true})
+            setValue('year', carForUpdate.year, {shouldValidate:true})
+        }
+    },[carForUpdate])
+
+    useEffect(()=>{
+        if (carDelete){
+            setValue('brand', carDelete.brand, {shouldValidate:true})
+            setValue('price', carDelete.price, {shouldValidate:true})
+            setValue('year', carDelete.year, {shouldValidate:true})
+        }
+    },[carDelete])
 
     const save = async (car) => {
         const {data} = await carService.create(car);
-        setAllCars(prev => !prev);
+        setAllCars(data);
         reset();
     }
+
+    const update = async (car)=>{
+        const {data} = await carService.getById(carForUpdate.id);
+        const {dataU} = await carService.updateByID(data.id, car)
+        setCarForUpdate(dataU);
+        reset();
+    }
+
+    const carDeletet = async (car)=>{
+        const {data} = await carService.getById(carDelete.id);
+        const {dataD} = await carService.deleteById(data.id)
+        setCarDelete(dataD);
+        reset();
+    }
+
     return (
-        <form onSubmit={handleSubmit(save)}>
+        <form onSubmit={handleSubmit(carForUpdate?update:carDelete?carDeletet:save)}>
             <input type="text" placeholder={'brand'} {...register('brand', {
                 pattern: {
                     value: /^[a-zA-Zа-яА-яёЁіІїЇ]{1,20}$/,
@@ -46,7 +77,8 @@ const CarForm = ({setAllCars}) => {
                 }
             })}/>
             {errors.year && <span>{errors.year.message}</span>}
-            <button disabled={!isValid}>Save</button>
+            <button disabled={!isValid}>{carForUpdate?'Update':carDelete?'Delete':'Save'}</button>
+
         </form>
     );
 };
