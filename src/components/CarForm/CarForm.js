@@ -1,6 +1,8 @@
 import React, {useEffect} from 'react';
 import {useForm} from "react-hook-form";
 import {carService} from "../../services/car.service";
+import {joiResolver} from '@hookform/resolvers/joi'
+import {carValidator} from "../../validators/car.validator";
 
 const CarForm = ({setAllCars, carForUpdate, setCarForUpdate, carDelete, setCarDelete}) => {
     const {
@@ -12,7 +14,7 @@ const CarForm = ({setAllCars, carForUpdate, setCarForUpdate, carDelete, setCarDe
             isValid,
         },
         setValue
-    } = useForm({mode: 'all'});
+    } = useForm({mode: 'all', resolver:joiResolver(carValidator)});
 
     useEffect(()=>{
         if (carForUpdate){
@@ -52,30 +54,11 @@ const CarForm = ({setAllCars, carForUpdate, setCarForUpdate, carDelete, setCarDe
 
     return (
         <form className={'form'} onSubmit={handleSubmit(carForUpdate?update:carDelete?carDeletet:save)}>
-            <input type="text" placeholder={'brand'} {...register('brand', {
-                pattern: {
-                    value: /^[a-zA-Zа-яА-яёЁіІїЇ]{1,20}$/,
-                    message: 'Бренд складається тільки з літер від 1 до 20 символів'
-                },
-                required: {value: true, message: 'Бренд складається тільки з літер від 1 до 20 символів'}
-            })}/>
+            <input type="text" placeholder={'brand'} {...register('brand')}/>
             {errors.brand && <span>{errors.brand.message}</span>}
-            <input type="text" placeholder={'price'} {...register('price', {
-                valueAsNumber: true,
-                min: {value: 0, message: 'мінімум - 0'},
-                max: {value: 1000000, message: 'максимум - 1 000 000'},
-                required: {value: true, message: 'мінімум - 0, максимум - 1 000 000'}
-            })}/>
+            <input type="text" placeholder={'price'} {...register('price')}/>
             {errors.price && <span>{errors.price.message}</span>}
-            <input type="text" placeholder={'year'} {...register('year', {
-                valueAsNumber: true,
-                min: {value: 1993, message: 'мінімальний рік - 1993'},
-                max: {value: new Date().getFullYear(), message: `максимальний рік - ${new Date().getFullYear()}`},
-                required: {
-                    value: true,
-                    message: `мінімальний рік - 1993, максимальний рік - ${new Date().getFullYear()}`
-                }
-            })}/>
+            <input type="text" placeholder={'year'} {...register('year')}/>
             {errors.year && <span>{errors.year.message}</span>}
             <button disabled={!isValid}>{carForUpdate?'Update':carDelete?'Delete':'Save'}</button>
 
