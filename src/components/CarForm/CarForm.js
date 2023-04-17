@@ -51,7 +51,7 @@ const CarForm = ({setAllCars, carForUpdate, setCarForUpdate, carDelete, setCarDe
     }
 
     return (
-        <form onSubmit={handleSubmit(carForUpdate?update:carDelete?carDeletet:save)}>
+        <form className={'form'} onSubmit={handleSubmit(carForUpdate?update:carDelete?carDeletet:save)}>
             <input type="text" placeholder={'brand'} {...register('brand', {
                 pattern: {
                     value: /^[a-zA-Zа-яА-яёЁіІїЇ]{1,20}$/,

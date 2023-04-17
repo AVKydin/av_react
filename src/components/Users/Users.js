@@ -1,10 +1,11 @@
 import React from 'react';
-import User from "../User/User";
+import AddUser from "../AddUser/AddUser";
+
 
 const Users = () => {
     return (
         <div>
-            <User/>
+            <AddUser/>
         </div>
     );
 };

@@ -8,13 +8,17 @@
 //         Реалізувати створення, видалення та оновлення машин
 import Cars from "./components/Cars/Cars";
 import Users from "./components/Users/Users";
+import "./App.css"
+import Comment from "./components/Comment/Comment";
 
 function App() {
   return (
     <div className="App">
             <Users/>
-            {/*<Comment/>*/}
-            {/*<Cars/>*/}
+            <hr/>
+            <Comment/>
+            <hr/>
+            <Cars/>
     </div>
   );
 }

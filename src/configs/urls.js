@@ -3,7 +3,8 @@ const baseURLUsers = 'https://jsonplaceholder.typicode.com';
 
 const urls = {
     cars: '/cars',
-    users: '/users'
+    users: '/users',
+    comments: '/comments'
 }
 
 export {
