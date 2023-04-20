@@ -4,7 +4,7 @@ import './Comment.css'
 import {Link} from "react-router-dom";
 
 const Comment = ({comment}) => {
-    const {postId, id, name, email, body} = comment;
+    const { body} = comment;
 
     return (
 
