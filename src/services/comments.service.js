@@ -1,10 +1,11 @@
 import {axiosService} from "./axios.service.urls";
+
 import {urls} from "../configs/urls";
 
-const todoService = {
-    getAll:()=>axiosService.get(urls.todos)
+const commentsService = {
+    getAll:()=>axiosService.get(urls.comments)
 }
 
 export {
-    todoService
+    commentsService
 }

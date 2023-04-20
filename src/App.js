@@ -3,6 +3,7 @@ import {Home} from "./components/home/Home";
 import {Todos} from "./components/todos/Todos";
 import {Albums} from "./components/albums/Albums";
 import {Comments} from "./components/comments/Comments";
+import {PostComment} from "./components/postComment/PostComment";
 
 
 function App() {
@@ -32,7 +33,9 @@ function App() {
                     <Route path={'/'} element={<Home/>}/>
                     <Route path={'/todos'} element={<Todos/>}/>
                     <Route path={'/albums'} element={<Albums/>}/>
-                    <Route path={'/comments'} element={<Comments/>}/>
+                    <Route path={'/comments'} element={<Comments/>}>
+                        <Route path={':postId'} element={<PostComment/>}/>
+                    </Route>
 
                 </Routes>
             </div>
