@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ad968b2-d86b-4bbf-bc3b-4a41bd0d8602" name="Changes" comment="base TS">
-      <change afterPath="$PROJECT_DIR$/src/configs/urls.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/conponents/Cars/Cars.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/car.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/axios.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/car.service.ts" afterDir="false" />
+    <list default="true" id="6ad968b2-d86b-4bbf-bc3b-4a41bd0d8602" name="Changes" comment="L3TS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/conponents/Car/Car.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/conponents/Car/Car.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/conponents/CarForm/CarForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/conponents/CarForm/CarForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/conponents/Cars/Cars.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/conponents/Cars/Cars.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/axios.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/axios.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,21 +45,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "js.last.introduce.type": "CONST",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "E:\\Octen\\av_react\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;js.last.introduce.type&quot;: &quot;CONST&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;E:\\Octen\\av_react\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Octen\av_react\src\conponents\Cars" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,7 +82,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681921358551</updated>
-      <workItem from="1681921380054" duration="3293000" />
+      <workItem from="1681921380054" duration="4184000" />
+      <workItem from="1681972887539" duration="3625000" />
     </task>
     <task id="LOCAL-00001" summary="base TS">
       <created>1681921972397</created>
@@ -83,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681922039550</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="L3TS">
+      <created>1681938325847</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681938325847</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,6 +114,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="base TS" />
-    <option name="LAST_COMMIT_MESSAGE" value="base TS" />
+    <MESSAGE value="L3TS" />
+    <option name="LAST_COMMIT_MESSAGE" value="L3TS" />
   </component>
 </project>
