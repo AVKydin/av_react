@@ -1,0 +1,52 @@
+.App{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.posts-block,
+.comments-block
+{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: fit-content;
+    box-sizing: border-box;
+}
+
+.posts-block{
+    border-right: 3px solid black;
+}
+
+.posts,
+.comments{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.post,
+.comment{
+    width: 31%;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.title{
+    display: block;
+    width: 49%;
+    text-align: center;
+    font-size: 24px;
+}
+
+.dog,
+.cat{
+    margin: 0 10px 0 20px;
+}
+
+.btn{
+    margin: 0 10px;
+}
