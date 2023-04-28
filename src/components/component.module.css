@@ -1,0 +1,17 @@
+.Main{
+    display: flex;
+    justify-content: center;
+    background-color: azure;
+}
+
+.Car,
+.User{
+    border: 1px solid black;
+    margin: 5px;
+    text-align: center;
+}
+
+.Comment{
+    border: 1px solid black;
+    margin: 5px;
+}
