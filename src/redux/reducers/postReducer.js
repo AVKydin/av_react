@@ -3,7 +3,7 @@ import React from "react";
 import {DEC, INC, RESET} from "../actions";
 
 
-const baseReducer = (state = 0, action)=>{
+const postReducer = (state = 0, action)=>{
     switch (action.type){
         case INC:
             return <Posts/>;
@@ -17,5 +17,5 @@ const baseReducer = (state = 0, action)=>{
 };
 
 export {
-    baseReducer
+    postReducer
 }

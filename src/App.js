@@ -1,5 +1,6 @@
 import {useDispatch, useSelector} from "react-redux";
 import {decrement, increment, reset} from "./redux";
+import './styles/header.css'
 
 
 const App = ()=> {
@@ -21,14 +22,17 @@ const App = ()=> {
 
     }
 
+
     return (
-    <div>
-        <button onClick={onInc}>Increment</button>
-        <button onClick={onDec}>Decrement</button>
-        <button onClick={onRes}>Reset</button>
-        <h1>{state}</h1>
-    </div>
-  );
+        <div className={'header'}>
+            <div className={'nav'}>
+                <button onClick={onInc}>Increment</button>
+                <button onClick={onDec}>Decrement</button>
+                <button onClick={onRes}>Reset</button>
+            </div>
+                <h1>{state}</h1>
+        </div>
+    );
 }
 
 export default App;
