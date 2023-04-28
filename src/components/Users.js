@@ -8,9 +8,11 @@ const Users = () => {
 
     return (
         <div className={css.Main}>
-            <div>{state.users.map(user => <div className={css.User} key={user.id}>
-                <div>{user.name}, {user.email}</div>
-            </div>)}</div>
+            <div>{state.users.map(user =>
+                <div className={css.User} key={user.id}>
+                    <div>{user.name}, {user.email}</div>
+                </div>)}
+            </div>
         </div>
     );
 };

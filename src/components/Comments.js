@@ -7,9 +7,11 @@ const Comments = () => {
 
     return (
         <div className={css.Main}>
-            <div >{state.comments.map(comment => <div className={css.Comment} key={comment.id}>
-                <div>{comment.name}, {comment.body}</div>
-            </div>)}</div>
+            <div >{state.comments.map(comment =>
+                <div className={css.Comment} key={comment.id}>
+                    <div>{comment.name}, {comment.body}</div>
+                </div>)}
+            </div>
         </div>
     );
 };

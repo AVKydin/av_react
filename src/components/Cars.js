@@ -9,9 +9,10 @@ const Cars = () => {
     return (
         <div className={css.Main}>
             <div>
-                {state.cars.map(car => <div className={css.Car} key={car.id}>
-                    <div>{car.brand} - {car.price}</div>
-                </div>)}
+                {state.cars.map(car =>
+                    <div className={css.Car} key={car.id}>
+                        <div>{car.brand} - {car.price}</div>
+                    </div>)}
             </div>
         </div>
     );

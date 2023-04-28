@@ -1,10 +1,12 @@
 import { useDispatch } from "react-redux";
 
 import './styles/header.css'
-import {carsService, commentsService, usersService} from "./axios/axios.service";
 import Cars from "./components/Cars";
 import Users from "./components/Users";
 import Comments from "./components/Comments";
+import {carsService} from "./services/car.service";
+import {usersService} from "./services/user.service";
+import {commentsService} from "./services/comment.service";
 
 
 const App = ()=> {
@@ -14,7 +16,6 @@ const App = ()=> {
 
         const onCars=()=>{
             carsService.then(value => dispatch({type:'SET_CARS', payload:value}))
-
         };
 
         const onUsers=()=>{
