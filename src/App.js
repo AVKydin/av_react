@@ -1,9 +1,9 @@
 import { useDispatch } from "react-redux";
 
 import './styles/header.css'
-import Cars from "./components/Cars";
-import Users from "./components/Users";
-import Comments from "./components/Comments";
+import Cars from "./components/Cars/Cars";
+import Users from "./components/Users/Users";
+import Comments from "./components/Comments/Comments";
 import {carsService} from "./services/car.service";
 import {usersService} from "./services/user.service";
 import {commentsService} from "./services/comment.service";
