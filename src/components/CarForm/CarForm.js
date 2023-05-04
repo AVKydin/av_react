@@ -18,8 +18,7 @@ const CarForm = () => {
     },[carForUpdate, setValue])
 
     const save = async (car)=>{
-        await carsService.create(car)
-        dispatch(carActions.changeTrigger())
+        await dispatch(carActions.create({car}))
         reset()
     };
 
