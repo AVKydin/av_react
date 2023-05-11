@@ -1,10 +1,16 @@
 import React from 'react';
+import {Navigate, Route, Routes} from "react-router-dom";
+
+import {MainLayout} from "./layuots";
+import {CarPage} from "./pages";
 
 const App = () => {
     return (
-        <div>
-          App
-        </div>
+        <Routes>
+          <Route path={'/'} element={<MainLayout/>}/>
+            <Route index element={<Navigate to={'cars'}/>}/>
+            <Route path={'cars'} element={<CarPage/>}/>
+        </Routes>
     );
 };
 

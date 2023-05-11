@@ -4,9 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ad968b2-d86b-4bbf-bc3b-4a41bd0d8602" name="Changes" comment="">
+    <list default="true" id="6ad968b2-d86b-4bbf-bc3b-4a41bd0d8602" name="Changes" comment="start L4TS">
+      <change afterPath="$PROJECT_DIR$/src/components/Car.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CarForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Cars.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/urls.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/redux.hooks.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/router.hooks.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/car.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/error.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layuots/MainLayout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layuots/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/CarPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/slice/car.slice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/slice/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/axios.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/car.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/useState.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/setState.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/axiosRes.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/axiosRes.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/setState.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/setState.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +46,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
       </list>
     </option>
@@ -23,7 +54,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="L4TS" />
+        <entry key="$PROJECT_DIR$" value="baseTS" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,6 +75,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;js.last.introduce.type&quot;: &quot;CONST&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Octen/av_react/src/redux/slice&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
@@ -52,6 +85,15 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Octen\av_react\src\redux\slice" />
+      <recent name="E:\Octen\av_react\src\types" />
+      <recent name="E:\Octen\av_react\src\layuots" />
+      <recent name="E:\Octen\av_react\src\interfaces" />
+      <recent name="E:\Octen\av_react\src\hooks" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,6 +103,10 @@
       <option name="presentableId" value="Default" />
       <updated>1681921358551</updated>
       <workItem from="1681921380054" duration="385000" />
+      <workItem from="1683710702313" duration="7090000" />
+      <workItem from="1683748733083" duration="569000" />
+      <workItem from="1683821302302" duration="2815000" />
+      <workItem from="1683832928084" duration="965000" />
     </task>
     <task id="LOCAL-00001" summary="start L4TS">
       <created>1682194474106</created>
