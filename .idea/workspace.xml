@@ -4,7 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ad968b2-d86b-4bbf-bc3b-4a41bd0d8602" name="Changes" comment="start L9TS" />
+    <list default="true" id="6ad968b2-d86b-4bbf-bc3b-4a41bd0d8602" name="Changes" comment="start L9TS">
+      <change afterPath="$PROJECT_DIR$/src/hoc/RequiredAuth.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/pagination.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/tokens.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/user.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/slice/auth.slice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/waitList.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoginForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoginForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RegisterForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RegisterForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/urls.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/urls.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/car.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/car.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/error.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/error.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/CarPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CarPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/LoginPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LoginPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/slice/car.slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slice/car.slice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/slice/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slice/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/axios.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/axios.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/car.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/car.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validators/auth.validator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/validators/auth.validator.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validators/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/validators/index.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +45,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
+        <option value="CSS File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -37,21 +70,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;js.last.introduce.type&quot;: &quot;CONST&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Octen/av_react/src/redux/slice&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;E:\\Octen\\av_react\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "js.last.introduce.type": "CONST",
+    "last_opened_file_path": "E:/Octen/av_react/src/redux/slice",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "E:\\Octen\\av_react\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Octen\av_react\src\redux\slice" />
@@ -74,6 +108,11 @@
       <workItem from="1683748733083" duration="569000" />
       <workItem from="1683821302302" duration="2815000" />
       <workItem from="1683832928084" duration="2279000" />
+      <workItem from="1683901712030" duration="5154000" />
+      <workItem from="1683921919844" duration="80000" />
+      <workItem from="1683924074965" duration="1437000" />
+      <workItem from="1683961545945" duration="5746000" />
+      <workItem from="1683977579442" duration="10910000" />
     </task>
     <task id="LOCAL-00001" summary="start L4TS">
       <created>1682194474106</created>
@@ -96,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683835733114</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="start L9TS">
+      <created>1683919798837</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683919798837</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

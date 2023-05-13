@@ -9,3 +9,7 @@ const authValidator = Joi.object({
     })
 });
 
+export {
+    authValidator
+}
+
